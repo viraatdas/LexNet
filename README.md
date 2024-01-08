@@ -1,7 +1,9 @@
 # Lex
 
 First, DAG for laws
+
 Then, a formal verifier for laws
+
 And then, replacing lawyers or reducing their needs #ImproveSociety
 
 ## Why DAG?
