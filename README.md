@@ -1,4 +1,4 @@
-# Lex
+# LexNet
 
 First, DAG for laws
 
