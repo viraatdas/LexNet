@@ -1,10 +1,27 @@
 # LexNet
+Lex = Law in latin 
+
+**Plan** 
 
 First, DAG for laws
 
 Then, a formal verifier for laws
 
-And then, replacing lawyers or reducing their needs #ImproveSociety
+And then, replace lawyers (or at least reduce their needs).
+
+**Motivation**
+
+Paying someone to explain things that you should understand yourself is stupid. 
+
+Being able to add and subtract legislation that affect livelihood should be easy and as close to immediate as feasible. 
+
+Being able to understand (like actually understand) things should be easy. 
+
+Being able to propose changes should be easy. 
+
+Being able to validate that a new legislation can be proposed should be easy. 
+
+In the spirit of the 6th amendment, bureacracy shouldn't get in the way of speediness of actions. Things should be automated (reasonably) to a degree as high as possible. 
 
 ## Why DAG?
 
