@@ -254,20 +254,43 @@ name = "graphiti-core"
 version = "0.2.1"
 description = "A temporal graph building library"
 optional = false
-python-versions = "<4.0,>=3.10"
+python-versions = "^3.10"
+files = []
+develop = false
+
+[package.dependencies]
+diskcache = "^5.6.3"
+fastapi = "^0.112.0"
+groq = "^0.11.0"
+neo4j = "^5.23.0"
+openai = "^1.38.0"
+pydantic = "^2.8.2"
+python-dotenv = "^1.0.1"
+sentence-transformers = "^3.0.1"
+tenacity = "<9.0.0"
+
+[package.source]
+type = "directory"
+url = "../../graphiti"
+
+[[package]]
+name = "groq"
+version = "0.11.0"
+description = "The official Python library for the groq API"
+optional = false
+python-versions = ">=3.7"
 files = [
-    {file = "graphiti_core-0.2.1-py3-none-any.whl", hash = "sha256:b1f8aca82161d4416afbb26dc75e69c8a3ab4e04adf027cbb6f1f2b6fc1b4304"},
-    {file = "graphiti_core-0.2.1.tar.gz", hash = "sha256:663df4d13f6275a7ff2af941cf108dd1cbfefe9d4b18c5f8e9242d328702961d"},
+    {file = "groq-0.11.0-py3-none-any.whl", hash = "sha256:e328531c979542e563668c62260aec13b43a6ee0ca9e2fb22dff1d26f8c8ce54"},
+    {file = "groq-0.11.0.tar.gz", hash = "sha256:dbb9aefedf388ddd4801ec7bf3eba7f5edb67948fec0cd2829d97244059f42a7"},
 ]
 
 [package.dependencies]
-diskcache = ">=5.6.3,<6.0.0"
-fastapi = ">=0.112.0,<0.113.0"
-neo4j = ">=5.23.0,<6.0.0"
-openai = ">=1.38.0,<2.0.0"
-pydantic = ">=2.8.2,<3.0.0"
-sentence-transformers = ">=3.0.1,<4.0.0"
-tenacity = "<9.0.0"
+anyio = ">=3.5.0,<5"
+distro = ">=1.7.0,<2"
+httpx = ">=0.23.0,<1"
+pydantic = ">=1.9.0,<3"
+sniffio = "*"
+typing-extensions = ">=4.7,<5"
 
 [[package]]
 name = "h11"
@@ -1054,6 +1077,20 @@ files = [
 typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 
 [[package]]
+name = "python-dotenv"
+version = "1.0.1"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python-dotenv-1.0.1.tar.gz", hash = "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca"},
+    {file = "python_dotenv-1.0.1-py3-none-any.whl", hash = "sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "pytz"
 version = "2024.1"
 description = "World timezone definitions, modern and historical"
@@ -1489,13 +1526,13 @@ train = ["accelerate (>=0.20.3)", "datasets"]
 
 [[package]]
 name = "setuptools"
-version = "74.1.1"
+version = "74.1.2"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "setuptools-74.1.1-py3-none-any.whl", hash = "sha256:fc91b5f89e392ef5b77fe143b17e32f65d3024744fba66dc3afe07201684d766"},
-    {file = "setuptools-74.1.1.tar.gz", hash = "sha256:2353af060c06388be1cecbf5953dcdb1f38362f87a2356c480b6b4d5fcfc8847"},
+    {file = "setuptools-74.1.2-py3-none-any.whl", hash = "sha256:5f4c08aa4d3ebcb57a50c33b1b07e94315d7fc7230f7115e47fc99776c8ce308"},
+    {file = "setuptools-74.1.2.tar.gz", hash = "sha256:95b40ed940a1c67eb70fc099094bd6e99c6ee7c23aa2306f4d2697ba7916f9c6"},
 ]
 
 [package.extras]
@@ -1890,4 +1927,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "345efe4215ae76e6e9c02c15251365390f9fffc31f6826f440207ecaa738a789"
+content-hash = "aae00611a366ec701e4551e539b61d9a95b2986bd5f04a5ef6b0753dbc468f81"
