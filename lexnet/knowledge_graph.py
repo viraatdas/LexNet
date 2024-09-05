@@ -1,4 +1,6 @@
-import os
+import sys
+sys.path.append('/Users/viraatd/Documents/Personal/graphiti')
+
 from graphiti_core import Graphiti
 from graphiti_core.llm_client.groq_client import GroqClient
 from graphiti_core.nodes import EpisodeType
@@ -6,8 +8,7 @@ from datetime import datetime
 import asyncio
 import dotenv
 
-# Load the .env file (if needed for GROQ_API_KEY)
-dotenv.load_dotenv()
+
 
 # Mock OpenAI environment variable if needed
 
