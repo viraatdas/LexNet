@@ -9,9 +9,6 @@ import asyncio
 import dotenv
 
 
-
-# Mock OpenAI environment variable if needed
-
 llm_client = GroqClient()
 
 graphiti = Graphiti("bolt://localhost:7687", "neo4j", "password", llm_client=llm_client)

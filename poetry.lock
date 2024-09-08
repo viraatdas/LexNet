@@ -408,26 +408,6 @@ files = [
 ]
 
 [[package]]
-name = "fastapi"
-version = "0.112.2"
-description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "fastapi-0.112.2-py3-none-any.whl", hash = "sha256:db84b470bd0e2b1075942231e90e3577e12a903c4dc8696f0d206a7904a7af1c"},
-    {file = "fastapi-0.112.2.tar.gz", hash = "sha256:3d4729c038414d5193840706907a41839d839523da6ed0c2811f1168cac1798c"},
-]
-
-[package.dependencies]
-pydantic = ">=1.7.4,<1.8 || >1.8,<1.8.1 || >1.8.1,<2.0.0 || >2.0.0,<2.0.1 || >2.0.1,<2.1.0 || >2.1.0,<3.0.0"
-starlette = ">=0.37.2,<0.39.0"
-typing-extensions = ">=4.8.0"
-
-[package.extras]
-all = ["email-validator (>=2.0.0)", "fastapi-cli[standard] (>=0.0.5)", "httpx (>=0.23.0)", "itsdangerous (>=1.1.0)", "jinja2 (>=2.11.2)", "orjson (>=3.2.1)", "pydantic-extra-types (>=2.0.0)", "pydantic-settings (>=2.0.0)", "python-multipart (>=0.0.7)", "pyyaml (>=5.3.1)", "ujson (>=4.0.1,!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0)", "uvicorn[standard] (>=0.12.0)"]
-standard = ["email-validator (>=2.0.0)", "fastapi-cli[standard] (>=0.0.5)", "httpx (>=0.23.0)", "jinja2 (>=2.11.2)", "python-multipart (>=0.0.7)", "uvicorn[standard] (>=0.12.0)"]
-
-[[package]]
 name = "filelock"
 version = "3.15.4"
 description = "A platform independent file lock."
@@ -570,7 +550,7 @@ tqdm = ["tqdm"]
 
 [[package]]
 name = "graphiti-core"
-version = "0.2.1"
+version = "0.2.3"
 description = "A temporal graph building library"
 optional = false
 python-versions = "^3.10"
@@ -579,13 +559,12 @@ develop = true
 
 [package.dependencies]
 diskcache = "^5.6.3"
-fastapi = "^0.112.0"
-groq = "^0.11.0"
+llama-index = "^0.11.7"
+llama-index-embeddings-ollama = "^0.3.0"
 neo4j = "^5.23.0"
 openai = "^1.38.0"
 pydantic = "^2.8.2"
 python-dotenv = "^1.0.1"
-sentence-transformers = "^3.0.1"
 tenacity = "<9.0.0"
 
 [package.source]
@@ -901,23 +880,23 @@ pydantic = ">=1.10"
 
 [[package]]
 name = "llama-index"
-version = "0.11.5"
+version = "0.11.7"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "llama_index-0.11.5-py3-none-any.whl", hash = "sha256:0c87078016895807d0a340591143cd85803b5db4e4843d59a7811b532583eafb"},
-    {file = "llama_index-0.11.5.tar.gz", hash = "sha256:5fc72c3a0ead6587a047aced9d5c5fdd59c8fad79879002bd771f523ed0db042"},
+    {file = "llama_index-0.11.7-py3-none-any.whl", hash = "sha256:dc4f01410d5dffd379c59dec26e40c06c919bfcffc26e58d9a2cf1b986f959be"},
+    {file = "llama_index-0.11.7.tar.gz", hash = "sha256:2431cc7f63a7e1a2cf110ba91c177572205c12cdf78715842a3020645f44b0b5"},
 ]
 
 [package.dependencies]
-llama-index-agent-openai = ">=0.3.0,<0.4.0"
+llama-index-agent-openai = ">=0.3.1,<0.4.0"
 llama-index-cli = ">=0.3.0,<0.4.0"
-llama-index-core = ">=0.11.5,<0.12.0"
+llama-index-core = ">=0.11.7,<0.12.0"
 llama-index-embeddings-openai = ">=0.2.4,<0.3.0"
 llama-index-indices-managed-llama-cloud = ">=0.3.0"
 llama-index-legacy = ">=0.9.48,<0.10.0"
-llama-index-llms-openai = ">=0.2.2,<0.3.0"
+llama-index-llms-openai = ">=0.2.3,<0.3.0"
 llama-index-multi-modal-llms-openai = ">=0.2.0,<0.3.0"
 llama-index-program-openai = ">=0.2.0,<0.3.0"
 llama-index-question-gen-openai = ">=0.2.0,<0.3.0"
@@ -927,13 +906,13 @@ nltk = ">3.8.1"
 
 [[package]]
 name = "llama-index-agent-openai"
-version = "0.3.0"
+version = "0.3.1"
 description = "llama-index agent openai integration"
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "llama_index_agent_openai-0.3.0-py3-none-any.whl", hash = "sha256:2b7d0e3d0e95271e5244e75a0366248c48d733497d93ae5bb09f548afe24ec98"},
-    {file = "llama_index_agent_openai-0.3.0.tar.gz", hash = "sha256:dade70e8b987194d7afb6925f723060e9f4953eb134400da2fcd4ceedf2c3dff"},
+    {file = "llama_index_agent_openai-0.3.1-py3-none-any.whl", hash = "sha256:21886081ae74574d8cad1ec4886f2d4b082284b9364adb46fff87aba1a25e9b9"},
+    {file = "llama_index_agent_openai-0.3.1.tar.gz", hash = "sha256:41c9aa5b7cebc5043adddb3442e3167e97971589466e36448e04e0a767f5b9aa"},
 ]
 
 [package.dependencies]
@@ -959,13 +938,13 @@ llama-index-llms-openai = ">=0.2.0,<0.3.0"
 
 [[package]]
 name = "llama-index-core"
-version = "0.11.5"
+version = "0.11.7"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "llama_index_core-0.11.5-py3-none-any.whl", hash = "sha256:54d4c6ba1e5bfb3f641b9f1c359c3ad251f87e3fe9ca7882bbb76766a9759cd7"},
-    {file = "llama_index_core-0.11.5.tar.gz", hash = "sha256:9631a7ed1b7b9abf8fd403404d9a03ffc6db2106b82307a640b8b1f3cea5cf22"},
+    {file = "llama_index_core-0.11.7-py3-none-any.whl", hash = "sha256:4a656d650b44e800ad9fe40c685cc1ee51075e1f5bb8c445231b0872fe2501cd"},
+    {file = "llama_index_core-0.11.7.tar.gz", hash = "sha256:66bcd18939d45cac35aa53d4560f0d1e82f191ea8b65b33914d490a2ae3291fd"},
 ]
 
 [package.dependencies]
@@ -1006,6 +985,21 @@ files = [
 huggingface-hub = {version = ">=0.19.0", extras = ["inference"]}
 llama-index-core = ">=0.11.0,<0.12.0"
 sentence-transformers = ">=2.6.1"
+
+[[package]]
+name = "llama-index-embeddings-ollama"
+version = "0.3.0"
+description = "llama-index embeddings ollama integration"
+optional = false
+python-versions = "<4.0,>=3.8.1"
+files = [
+    {file = "llama_index_embeddings_ollama-0.3.0-py3-none-any.whl", hash = "sha256:513f6e606fa9e55fd713b77d99d2e4c7b77611c68ac216431e32dc661f753953"},
+    {file = "llama_index_embeddings_ollama-0.3.0.tar.gz", hash = "sha256:439a5cd11e3bde504fad6a88085e94217d26a786a4636481a97052ecc22407b6"},
+]
+
+[package.dependencies]
+llama-index-core = ">=0.11.0,<0.12.0"
+ollama = ">=0.3.1,<0.4.0"
 
 [[package]]
 name = "llama-index-embeddings-openai"
@@ -1093,18 +1087,18 @@ llama-index-llms-openai-like = ">=0.2.0,<0.3.0"
 
 [[package]]
 name = "llama-index-llms-openai"
-version = "0.2.2"
+version = "0.2.3"
 description = "llama-index llms openai integration"
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "llama_index_llms_openai-0.2.2-py3-none-any.whl", hash = "sha256:c42d4dbf4ea81355a45d8132ee4cbe0fd89e6e3ad6688d2e592204d194919b2d"},
-    {file = "llama_index_llms_openai-0.2.2.tar.gz", hash = "sha256:5d8d77cd7dcb839aded9bd5da37c5806d680eb20fd04cc26891551fc17e4d1e0"},
+    {file = "llama_index_llms_openai-0.2.3-py3-none-any.whl", hash = "sha256:dbcf8636bca57b0c063621a9981bbf2fdfaedd96c8e4906b8ddf0a139cb74d2f"},
+    {file = "llama_index_llms_openai-0.2.3.tar.gz", hash = "sha256:e9173b430331791c6a5a9df16796437ae4a3ae247fd4e0f281f7cbe59258b07a"},
 ]
 
 [package.dependencies]
-llama-index-agent-openai = ">=0.3.0,<0.4.0"
-llama-index-core = ">=0.11.0,<0.12.0"
+llama-index-agent-openai = ">=0.3.1,<0.4.0"
+llama-index-core = ">=0.11.7,<0.12.0"
 openai = ">=1.40.0,<2.0.0"
 
 [[package]]
@@ -1713,6 +1707,20 @@ files = [
     {file = "nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl", hash = "sha256:dc21cf308ca5691e7c04d962e213f8a4aa9bbfa23d95412f452254c2caeb09e5"},
     {file = "nvidia_nvtx_cu12-12.1.105-py3-none-win_amd64.whl", hash = "sha256:65f4d98982b31b60026e0e6de73fbdfc09d08a96f4656dd3665ca616a11e1e82"},
 ]
+
+[[package]]
+name = "ollama"
+version = "0.3.2"
+description = "The official Python client for Ollama."
+optional = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "ollama-0.3.2-py3-none-any.whl", hash = "sha256:ed2a6f752bd91c49b477d84a259c5657785d7777689d4a27ffe0a4d5b5dd3cae"},
+    {file = "ollama-0.3.2.tar.gz", hash = "sha256:7deb3287cdefa1c39cc046163096f8597b83f59ca31a1f8ae78e71eccb7af95f"},
+]
+
+[package.dependencies]
+httpx = ">=0.27.0,<0.28.0"
 
 [[package]]
 name = "openai"
@@ -2659,23 +2667,6 @@ pymysql = ["pymysql"]
 sqlcipher = ["sqlcipher3_binary"]
 
 [[package]]
-name = "starlette"
-version = "0.38.4"
-description = "The little ASGI library that shines."
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "starlette-0.38.4-py3-none-any.whl", hash = "sha256:526f53a77f0e43b85f583438aee1a940fd84f8fd610353e8b0c1a77ad8a87e76"},
-    {file = "starlette-0.38.4.tar.gz", hash = "sha256:53a7439060304a208fea17ed407e998f46da5e5d9b1addfea3040094512a6379"},
-]
-
-[package.dependencies]
-anyio = ">=3.4.0,<5"
-
-[package.extras]
-full = ["httpx (>=0.22.0)", "itsdangerous", "jinja2", "python-multipart (>=0.0.7)", "pyyaml"]
-
-[[package]]
 name = "striprtf"
 version = "0.0.26"
 description = "A simple library to convert rtf to text"
@@ -3303,4 +3294,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "13ef5ae336d8413affe9a081264a6afa2d5cc1564a07c5761fb776183483988c"
+content-hash = "1bb83e52fab1edfe471d5fe8475fd17260b06373d8510589acb8dc574ae944e5"
