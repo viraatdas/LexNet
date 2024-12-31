@@ -1,6 +1,14 @@
 # LexNet
 Lex = Law in latin 
 
+
+## Usage
+```
+1. Start Neo4J desktop and the `lextnet` database
+2. export GROQ_API_KEY="..."
+3. poetry update graphiti-core && poetry run python lexnet/knowledge_graph.py
+```
+
 **Plan** 
 
 First, DAG for laws

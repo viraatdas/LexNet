@@ -12,4 +12,4 @@ with open("scraped.txt", "r") as file:
 
 
 for dirpath, dirnames, filenames in os.walk(root_dir):
-    
+    pass
